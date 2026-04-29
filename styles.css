@@ -1,59 +1,106 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  min-height: 100vh;
-    background: linear-gradient(rgb(0 0 0 / .3),rgb(0 0 0 / .3)), url("img/background.webp");
-    backdrop-filter: blur(5px);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem; /* texto más grande */
+    line-height: 1.6;
+    /* fondo con la imagen */
+    background-image: url('img/background.webp');
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    color: white;
+    background-position: center center;
+    background-attachment: fixed; /* para que el fondo no se mueva al hacer scroll */
 
-    border: 2px solid red;
+    color: #000000; /* texto negro para máximo contraste */
+    margin: 0;
+    padding: 20px;
+
+    /* Para mejorar la legibilidad sobre la imagen, dejamos el contenido en cajas blancas */
 }
 
-header {
-    height: 70px;
-    width: 100%;
-    text-align: center;
-
-    border: 2px solid #5877CC;
-}
-
+/* Contenedor principal para asegurar legibilidad por encima del fondo */
 section {
-    flex: 1;
-    min-height: 80vh;
-    height: auto;
-    width: 90%;
-    min-width: auto;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    align-items: center;
-    border-radius: 5vh;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95); /* caja blanca con leve transparencia para mostrar fondo sin perder legibilidad */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+/* Header también dentro de una caja para mejor legibilidad */
+header {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Footer similar */
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    font-size: 1em;
-
-    border-top: 1px solid #5877CC;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 30px 10px;
+    background: rgba(0, 51, 102, 0.9); /* fondo azul oscuro semitransparente */
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0 0 10px 10px;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-
-
-#error {
-  color: red;
-  background-color: darkolivegreen;
+/* El resto del CSS queda igual */
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #003366; /* azul oscuro */
 }
+
+p {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+}
+
+section div {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4rem;
+    color: #333333;
+}
+
+/* Botones grandes y visibles (por si los agregas) */
+button, input[type="button"], input[type="submit"] {
+    display: inline-block;
+    padding: 18px 36px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007acc;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: background-color 0.3s ease;
+    min-width: 200px;
+    min-height: 60px;
+    text-align: center;
+}
+
+button:hover, 
+input[type="button"]:hover, 
+input[type="submit"]:hover {
+    background-color: #005fa3;
+}
+
+button:focus, a:focus, input[type="button"]:focus, input[type="submit"]:focus {
+    outline: 3px solid #ffbf47;
+    outline-offset: 2px;
+}
+
