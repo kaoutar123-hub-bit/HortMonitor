@@ -1,32 +1,31 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem; /* texto más grande */
+    font-size: 1.5rem; 
     line-height: 1.6;
-    /* fondo con la imagen */
+
     background-image: url('img/background.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed; /* para que el fondo no se mueva al hacer scroll */
+    background-attachment: fixed;
 
-    color: #000000; /* texto negro para máximo contraste */
+    color: #000000; 
     margin: 0;
     padding: 20px;
 
-    /* Para mejorar la legibilidad sobre la imagen, dejamos el contenido en cajas blancas */
+    
 }
 
-/* Contenedor principal para asegurar legibilidad por encima del fondo */
+
 section {
     max-width: 700px;
     margin: 0 auto 50px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.95); /* caja blanca con leve transparencia para mostrar fondo sin perder legibilidad */
+    background: rgba(255, 255, 255, 0.95); 
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Header también dentro de una caja para mejor legibilidad */
 header {
     max-width: 700px;
     margin: 0 auto 40px auto;
@@ -41,12 +40,12 @@ header h1 {
     margin: 0;
 }
 
-/* Footer similar */
+
 footer {
     text-align: center;
     font-size: 1.2rem;
     padding: 30px 10px;
-    background: rgba(0, 51, 102, 0.9); /* fondo azul oscuro semitransparente */
+    background: rgba(0, 51, 102, 0.9); 
     color: #fff;
     font-weight: bold;
     border-radius: 0 0 10px 10px;
@@ -54,11 +53,11 @@ footer {
     margin: 0 auto;
 }
 
-/* El resto del CSS queda igual */
+
 section h2 {
     font-size: 2rem;
     margin-bottom: 25px;
-    color: #003366; /* azul oscuro */
+    color: #003366; 
 }
 
 p {
@@ -75,7 +74,7 @@ section div {
     color: #333333;
 }
 
-/* Botones grandes y visibles (por si los agregas) */
+
 button, input[type="button"], input[type="submit"] {
     display: inline-block;
     padding: 18px 36px;
